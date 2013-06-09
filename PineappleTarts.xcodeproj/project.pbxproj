@@ -1,0 +1,320 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4140BBC3176420A300F31655 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4140BBC2176420A300F31655 /* UIKit.framework */; };
+		4140BBC5176420A300F31655 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4140BBC4176420A300F31655 /* Foundation.framework */; };
+		4140BBC7176420A300F31655 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4140BBC6176420A300F31655 /* CoreGraphics.framework */; };
+		4140BBCD176420A300F31655 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4140BBCB176420A300F31655 /* InfoPlist.strings */; };
+		4140BBCF176420A300F31655 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4140BBCE176420A300F31655 /* main.m */; };
+		4140BBD3176420A300F31655 /* PineappleAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4140BBD2176420A300F31655 /* PineappleAppDelegate.m */; };
+		4140BBD5176420A300F31655 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 4140BBD4176420A300F31655 /* Default.png */; };
+		4140BBD7176420A300F31655 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4140BBD6176420A300F31655 /* Default@2x.png */; };
+		4140BBD9176420A300F31655 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4140BBD8176420A300F31655 /* Default-568h@2x.png */; };
+		4140BBDC176420A300F31655 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4140BBDA176420A300F31655 /* MainStoryboard_iPhone.storyboard */; };
+		4140BBDF176420A300F31655 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4140BBDD176420A300F31655 /* MainStoryboard_iPad.storyboard */; };
+		4140BBE2176420A300F31655 /* PineappleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4140BBE1176420A300F31655 /* PineappleViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4140BBBF176420A300F31655 /* PineappleTarts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PineappleTarts.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4140BBC2176420A300F31655 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		4140BBC4176420A300F31655 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4140BBC6176420A300F31655 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		4140BBCA176420A300F31655 /* PineappleTarts-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PineappleTarts-Info.plist"; sourceTree = "<group>"; };
+		4140BBCC176420A300F31655 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4140BBCE176420A300F31655 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4140BBD0176420A300F31655 /* PineappleTarts-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PineappleTarts-Prefix.pch"; sourceTree = "<group>"; };
+		4140BBD1176420A300F31655 /* PineappleAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PineappleAppDelegate.h; sourceTree = "<group>"; };
+		4140BBD2176420A300F31655 /* PineappleAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PineappleAppDelegate.m; sourceTree = "<group>"; };
+		4140BBD4176420A300F31655 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		4140BBD6176420A300F31655 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		4140BBD8176420A300F31655 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		4140BBDB176420A300F31655 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		4140BBDE176420A300F31655 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		4140BBE0176420A300F31655 /* PineappleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PineappleViewController.h; sourceTree = "<group>"; };
+		4140BBE1176420A300F31655 /* PineappleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PineappleViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4140BBBC176420A300F31655 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4140BBC3176420A300F31655 /* UIKit.framework in Frameworks */,
+				4140BBC5176420A300F31655 /* Foundation.framework in Frameworks */,
+				4140BBC7176420A300F31655 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4140BBB6176420A300F31655 = {
+			isa = PBXGroup;
+			children = (
+				4140BBC8176420A300F31655 /* PineappleTarts */,
+				4140BBC1176420A300F31655 /* Frameworks */,
+				4140BBC0176420A300F31655 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4140BBC0176420A300F31655 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4140BBBF176420A300F31655 /* PineappleTarts.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4140BBC1176420A300F31655 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4140BBC2176420A300F31655 /* UIKit.framework */,
+				4140BBC4176420A300F31655 /* Foundation.framework */,
+				4140BBC6176420A300F31655 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4140BBC8176420A300F31655 /* PineappleTarts */ = {
+			isa = PBXGroup;
+			children = (
+				4140BBD1176420A300F31655 /* PineappleAppDelegate.h */,
+				4140BBD2176420A300F31655 /* PineappleAppDelegate.m */,
+				4140BBDA176420A300F31655 /* MainStoryboard_iPhone.storyboard */,
+				4140BBDD176420A300F31655 /* MainStoryboard_iPad.storyboard */,
+				4140BBE0176420A300F31655 /* PineappleViewController.h */,
+				4140BBE1176420A300F31655 /* PineappleViewController.m */,
+				4140BBC9176420A300F31655 /* Supporting Files */,
+			);
+			path = PineappleTarts;
+			sourceTree = "<group>";
+		};
+		4140BBC9176420A300F31655 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4140BBCA176420A300F31655 /* PineappleTarts-Info.plist */,
+				4140BBCB176420A300F31655 /* InfoPlist.strings */,
+				4140BBCE176420A300F31655 /* main.m */,
+				4140BBD0176420A300F31655 /* PineappleTarts-Prefix.pch */,
+				4140BBD4176420A300F31655 /* Default.png */,
+				4140BBD6176420A300F31655 /* Default@2x.png */,
+				4140BBD8176420A300F31655 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4140BBBE176420A300F31655 /* PineappleTarts */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4140BBE5176420A300F31655 /* Build configuration list for PBXNativeTarget "PineappleTarts" */;
+			buildPhases = (
+				4140BBBB176420A300F31655 /* Sources */,
+				4140BBBC176420A300F31655 /* Frameworks */,
+				4140BBBD176420A300F31655 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PineappleTarts;
+			productName = PineappleTarts;
+			productReference = 4140BBBF176420A300F31655 /* PineappleTarts.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4140BBB7176420A300F31655 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = Pineapple;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Benjamin Goh";
+			};
+			buildConfigurationList = 4140BBBA176420A300F31655 /* Build configuration list for PBXProject "PineappleTarts" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4140BBB6176420A300F31655;
+			productRefGroup = 4140BBC0176420A300F31655 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4140BBBE176420A300F31655 /* PineappleTarts */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4140BBBD176420A300F31655 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4140BBCD176420A300F31655 /* InfoPlist.strings in Resources */,
+				4140BBD5176420A300F31655 /* Default.png in Resources */,
+				4140BBD7176420A300F31655 /* Default@2x.png in Resources */,
+				4140BBD9176420A300F31655 /* Default-568h@2x.png in Resources */,
+				4140BBDC176420A300F31655 /* MainStoryboard_iPhone.storyboard in Resources */,
+				4140BBDF176420A300F31655 /* MainStoryboard_iPad.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4140BBBB176420A300F31655 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4140BBCF176420A300F31655 /* main.m in Sources */,
+				4140BBD3176420A300F31655 /* PineappleAppDelegate.m in Sources */,
+				4140BBE2176420A300F31655 /* PineappleViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4140BBCB176420A300F31655 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4140BBCC176420A300F31655 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		4140BBDA176420A300F31655 /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4140BBDB176420A300F31655 /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		4140BBDD176420A300F31655 /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4140BBDE176420A300F31655 /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4140BBE3176420A300F31655 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4140BBE4176420A300F31655 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4140BBE6176420A300F31655 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PineappleTarts/PineappleTarts-Prefix.pch";
+				INFOPLIST_FILE = "PineappleTarts/PineappleTarts-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		4140BBE7176420A300F31655 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PineappleTarts/PineappleTarts-Prefix.pch";
+				INFOPLIST_FILE = "PineappleTarts/PineappleTarts-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4140BBBA176420A300F31655 /* Build configuration list for PBXProject "PineappleTarts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4140BBE3176420A300F31655 /* Debug */,
+				4140BBE4176420A300F31655 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4140BBE5176420A300F31655 /* Build configuration list for PBXNativeTarget "PineappleTarts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4140BBE6176420A300F31655 /* Debug */,
+				4140BBE7176420A300F31655 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4140BBB7176420A300F31655 /* Project object */;
+}
