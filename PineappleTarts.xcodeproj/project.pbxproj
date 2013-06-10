@@ -19,7 +19,23 @@
 		4140BBDC176420A300F31655 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4140BBDA176420A300F31655 /* MainStoryboard_iPhone.storyboard */; };
 		4140BBDF176420A300F31655 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4140BBDD176420A300F31655 /* MainStoryboard_iPad.storyboard */; };
 		4140BBE2176420A300F31655 /* PineappleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4140BBE1176420A300F31655 /* PineappleViewController.m */; };
+		4140BBEA1764241D00F31655 /* PineappleData.m in Sources */ = {isa = PBXBuildFile; fileRef = 4140BBE91764241D00F31655 /* PineappleData.m */; };
+		414A0C17176436D700D662D0 /* bkt.json in Resources */ = {isa = PBXBuildFile; fileRef = 414A0C16176436D700D662D0 /* bkt.json */; };
+		414A0C1A1764432100D662D0 /* bkt.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 414A0C16176436D700D662D0 /* bkt.json */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		414A0C191764430B00D662D0 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				414A0C1A1764432100D662D0 /* bkt.json in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		4140BBBF176420A300F31655 /* PineappleTarts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PineappleTarts.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -39,6 +55,9 @@
 		4140BBDE176420A300F31655 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		4140BBE0176420A300F31655 /* PineappleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PineappleViewController.h; sourceTree = "<group>"; };
 		4140BBE1176420A300F31655 /* PineappleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PineappleViewController.m; sourceTree = "<group>"; };
+		4140BBE81764241D00F31655 /* PineappleData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PineappleData.h; sourceTree = "<group>"; };
+		4140BBE91764241D00F31655 /* PineappleData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PineappleData.m; sourceTree = "<group>"; };
+		414A0C16176436D700D662D0 /* bkt.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = bkt.json; path = PineappleTarts/bkt.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +77,7 @@
 		4140BBB6176420A300F31655 = {
 			isa = PBXGroup;
 			children = (
+				414A0C181764408A00D662D0 /* Resources */,
 				4140BBC8176420A300F31655 /* PineappleTarts */,
 				4140BBC1176420A300F31655 /* Frameworks */,
 				4140BBC0176420A300F31655 /* Products */,
@@ -92,6 +112,8 @@
 				4140BBE0176420A300F31655 /* PineappleViewController.h */,
 				4140BBE1176420A300F31655 /* PineappleViewController.m */,
 				4140BBC9176420A300F31655 /* Supporting Files */,
+				4140BBE81764241D00F31655 /* PineappleData.h */,
+				4140BBE91764241D00F31655 /* PineappleData.m */,
 			);
 			path = PineappleTarts;
 			sourceTree = "<group>";
@@ -110,6 +132,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		414A0C181764408A00D662D0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				414A0C16176436D700D662D0 /* bkt.json */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -120,6 +150,7 @@
 				4140BBBB176420A300F31655 /* Sources */,
 				4140BBBC176420A300F31655 /* Frameworks */,
 				4140BBBD176420A300F31655 /* Resources */,
+				414A0C191764430B00D662D0 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -168,6 +199,7 @@
 				4140BBD9176420A300F31655 /* Default-568h@2x.png in Resources */,
 				4140BBDC176420A300F31655 /* MainStoryboard_iPhone.storyboard in Resources */,
 				4140BBDF176420A300F31655 /* MainStoryboard_iPad.storyboard in Resources */,
+				414A0C17176436D700D662D0 /* bkt.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,6 +213,7 @@
 				4140BBCF176420A300F31655 /* main.m in Sources */,
 				4140BBD3176420A300F31655 /* PineappleAppDelegate.m in Sources */,
 				4140BBE2176420A300F31655 /* PineappleViewController.m in Sources */,
+				4140BBEA1764241D00F31655 /* PineappleData.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,6 +346,7 @@
 				4140BBE7176420A300F31655 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
