@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		412C63DF176D8161007B3212 /* PDFViewer.m in Sources */ = {isa = PBXBuildFile; fileRef = 412C63DE176D8161007B3212 /* PDFViewer.m */; };
 		4140BBC3176420A300F31655 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4140BBC2176420A300F31655 /* UIKit.framework */; };
 		4140BBC5176420A300F31655 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4140BBC4176420A300F31655 /* Foundation.framework */; };
 		4140BBC7176420A300F31655 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4140BBC6176420A300F31655 /* CoreGraphics.framework */; };
@@ -38,6 +39,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		412C63DD176D8161007B3212 /* PDFViewer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PDFViewer.h; path = ../PDFViewer.h; sourceTree = "<group>"; };
+		412C63DE176D8161007B3212 /* PDFViewer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PDFViewer.m; path = ../PDFViewer.m; sourceTree = "<group>"; };
 		4140BBBF176420A300F31655 /* PineappleTarts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PineappleTarts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4140BBC2176420A300F31655 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		4140BBC4176420A300F31655 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -105,6 +108,8 @@
 		4140BBC8176420A300F31655 /* PineappleTarts */ = {
 			isa = PBXGroup;
 			children = (
+				412C63DD176D8161007B3212 /* PDFViewer.h */,
+				412C63DE176D8161007B3212 /* PDFViewer.m */,
 				4140BBD1176420A300F31655 /* PineappleAppDelegate.h */,
 				4140BBD2176420A300F31655 /* PineappleAppDelegate.m */,
 				4140BBDA176420A300F31655 /* MainStoryboard_iPhone.storyboard */,
@@ -214,6 +219,7 @@
 				4140BBD3176420A300F31655 /* PineappleAppDelegate.m in Sources */,
 				4140BBE2176420A300F31655 /* PineappleViewController.m in Sources */,
 				4140BBEA1764241D00F31655 /* PineappleData.m in Sources */,
+				412C63DF176D8161007B3212 /* PDFViewer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

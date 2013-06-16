@@ -1,10 +1,46 @@
 [
     {
-        "volume": "2",
-        "year": "2013",
-        "parts": [
-            "http://tlm2.tradelinkmedia.biz/publications/1/issues/59/documents/123",
-            "http://tlm2.tradelinkmedia.biz/publications/1/issues/59/documents/124"
-        ]
+    	"name": "Bathroom & Kitchen Today",
+    	"issues": [
+    		{
+    			"year": 2013,
+    			"volume": 2,
+    			"parts": [
+		            "http://tlm2.tradelinkmedia.biz/publications/1/issues/59/documents/123",
+		            "http://tlm2.tradelinkmedia.biz/publications/1/issues/59/documents/124"    			
+    			]
+    		},
+    		{
+    			"year": 2013,
+    			"volume": 1,
+    			"parts": [
+		            "http://tlm2.tradelinkmedia.biz/publications/1/issues/6/documents/11",
+		            "http://tlm2.tradelinkmedia.biz/publications/1/issues/6/documents/12"    			
+    			]
+    		}
+    	]
+    },
+    {
+    	"name": "Lighting Today",
+    	"issues": [
+    		{
+    			"year": 2013,
+    			"volume": 2,
+    			"parts": [
+		            "http://tlm2.tradelinkmedia.biz/publications/4/issues/60/documents/126",
+		            "http://tlm2.tradelinkmedia.biz/publications/4/issues/60/documents/127",
+		            "http://tlm2.tradelinkmedia.biz/publications/4/issues/60/documents/128" 			
+    			]
+    		},
+    		{
+    			"year": 2013,
+    			"volume": 1,
+    			"parts": [
+		            "http://tlm2.tradelinkmedia.biz/publications/4/issues/61/documents/129",
+		            "http://tlm2.tradelinkmedia.biz/publications/4/issues/61/documents/130",
+		            "http://tlm2.tradelinkmedia.biz/publications/4/issues/61/documents/131"
+    			]
+    		}
+    	]
     }
 ]
