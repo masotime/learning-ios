@@ -24,6 +24,7 @@
 
     if (!_data) {
         _data = [[PineappleData alloc] init];
+        [_data setViewController:self];
     }
     
     return _data;

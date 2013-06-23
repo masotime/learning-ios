@@ -12,6 +12,7 @@
 @interface PineappleData()
     @property (nonatomic, strong) NSMutableArray* publications;
     @property (nonatomic, strong) PDFViewer* viewer;
+    @property (nonatomic, weak) UIViewController* uiView;
 @end
 
 @implementation PineappleData
@@ -19,6 +20,7 @@
 
 @synthesize publications = _publications;
 @synthesize viewer = _viewer;
+@synthesize uiView = _uiView;
 
 - (id)init {
     self = [super init];
@@ -30,12 +32,13 @@
         if (requestError){
             NSLog(@"Some shit happened: %@", requestError);
         }
-        
-        // also init the viewer
-        // PDFViewer* viewer = [[PDFViewer alloc] init];
     
     }
     return self;
+}
+
+- (void)setViewController:(UIViewController *)controller {
+    self.uiView = controller;
 }
 
 - (NSDictionary*) getPublicationFor:(NSInteger)section {
@@ -79,17 +82,32 @@
     
     // just get the first part
     NSString* partUrl = [[issue objectForKey:@"parts"] objectAtIndex:0];
+    NSURL *url = [NSURL URLWithString:partUrl];
     
-    // copy and paste from http://andycodes.tumblr.com/post/738375724/ios4-sdk-opening-pdfs-in-ibooks
-    NSURL *url = [NSURL fileURLWithPath:partUrl];
+    NSLog(@"%@", partUrl);
     
-    // this is really weird voodoo
-    UIDocumentInteractionController* docController = [UIDocumentInteractionController interactionControllerWithURL:url];
-    docController.delegate = self;
+    // we download the file first before displaying it (http://stackoverflow.com/a/5331675/302266)
     
-    BOOL isValid = [docController presentOpenInMenuFromRect:CGRectZero inView:self.view animated:YES];
-
+    NSData *urlData = [NSData dataWithContentsOfURL:url];
     
+    if (urlData) {
+        NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+        NSString *documentsDirectory = [paths objectAtIndex:0];
+        
+        NSString *filePath = [NSString stringWithFormat:@"%@/%@", documentsDirectory,@"temp.pdf"];
+        [urlData writeToFile:filePath atomically:YES];
+        NSLog(@"Downloaded to %@", filePath);
+        
+        NSURL* fileURL = [NSURL fileURLWithPath:filePath];
+        NSLog(@"fileURL = %@", fileURL);
+        
+        // create a PDFViewer and launch it modally
+        PDFViewer* viewer = [[PDFViewer alloc] initWithMagazine:fileURL];
+        viewer.dataSource = viewer;
+        
+        [self.uiView presentViewController:viewer animated:YES completion:NULL];
+        
+    }
     
     
 }

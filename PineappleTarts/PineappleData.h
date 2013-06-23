@@ -18,5 +18,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath;
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section;
 
+// just so that I have a pointer to the main view
+- (void) setViewController:(UIViewController*) controller;
 
 @end

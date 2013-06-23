@@ -8,6 +8,6 @@
 
 #import <QuickLook/QuickLook.h>
 
-@interface PDFViewer : QLPreviewController
-
+@interface PDFViewer : QLPreviewController <QLPreviewControllerDataSource>
+    -(id) initWithMagazine:(NSURL*)pdfURL;
 @end

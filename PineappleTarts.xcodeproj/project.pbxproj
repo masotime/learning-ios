@@ -23,6 +23,7 @@
 		4140BBEA1764241D00F31655 /* PineappleData.m in Sources */ = {isa = PBXBuildFile; fileRef = 4140BBE91764241D00F31655 /* PineappleData.m */; };
 		414A0C17176436D700D662D0 /* bkt.json in Resources */ = {isa = PBXBuildFile; fileRef = 414A0C16176436D700D662D0 /* bkt.json */; };
 		414A0C1A1764432100D662D0 /* bkt.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 414A0C16176436D700D662D0 /* bkt.json */; };
+		4175B5AF1776B11B00FB7455 /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4175B5AE1776B11B00FB7455 /* QuickLook.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -61,6 +62,7 @@
 		4140BBE81764241D00F31655 /* PineappleData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PineappleData.h; sourceTree = "<group>"; };
 		4140BBE91764241D00F31655 /* PineappleData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PineappleData.m; sourceTree = "<group>"; };
 		414A0C16176436D700D662D0 /* bkt.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = bkt.json; path = PineappleTarts/bkt.json; sourceTree = "<group>"; };
+		4175B5AE1776B11B00FB7455 /* QuickLook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLook.framework; path = System/Library/Frameworks/QuickLook.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4175B5AF1776B11B00FB7455 /* QuickLook.framework in Frameworks */,
 				4140BBC3176420A300F31655 /* UIKit.framework in Frameworks */,
 				4140BBC5176420A300F31655 /* Foundation.framework in Frameworks */,
 				4140BBC7176420A300F31655 /* CoreGraphics.framework in Frameworks */,
@@ -80,6 +83,7 @@
 		4140BBB6176420A300F31655 = {
 			isa = PBXGroup;
 			children = (
+				4175B5AE1776B11B00FB7455 /* QuickLook.framework */,
 				414A0C181764408A00D662D0 /* Resources */,
 				4140BBC8176420A300F31655 /* PineappleTarts */,
 				4140BBC1176420A300F31655 /* Frameworks */,
@@ -317,6 +321,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PineappleTarts/PineappleTarts-Prefix.pch";
 				INFOPLIST_FILE = "PineappleTarts/PineappleTarts-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -328,6 +333,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PineappleTarts/PineappleTarts-Prefix.pch";
 				INFOPLIST_FILE = "PineappleTarts/PineappleTarts-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

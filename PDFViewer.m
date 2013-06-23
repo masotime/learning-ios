@@ -8,17 +8,41 @@
 
 #import "PDFViewer.h"
 
+@interface PDFViewer()
+    @property (nonatomic, strong) NSMutableArray* pdfArray;
+@end
+
 @implementation PDFViewer
 
-- (NSInteger) numberOfPreviewItemsInPreviewController: (QLPreviewController *) controller {
-    return 0;
-}
+    @synthesize pdfArray = _pdfArray;
 
-// Invoked when the Quick Look preview controller needs the preview item for a specified index position. (required)
-// Return Value:
-// The preview item to display. The item must be an NSURL object, or a custom object that conforms to the QLPreviewItem protocol.
-- (id <QLPreviewItem>) previewController: (QLPreviewController *) controller previewItemAtIndex: (NSInteger) index {
-    return nil;
-}
+    - (NSArray*) pdfArray {
+        if (!_pdfArray) {
+            _pdfArray = [[NSMutableArray alloc] init];
+        }
+        
+        return _pdfArray;
+    }
+
+    -(id) initWithMagazine:(NSURL*)pdfURL {
+        self = [super init];
+        if (self) {
+            [self.pdfArray addObject:pdfURL];
+        }
+        return self;
+    }
+
+    - (NSInteger) numberOfPreviewItemsInPreviewController: (QLPreviewController *) controller {
+        return [self.pdfArray count];
+    }
+
+    // Invoked when the Quick Look preview controller needs the preview item for a specified index position. (required)
+    // Return Value:
+    // The preview item to display. The item must be an NSURL object, or a custom object that conforms to the QLPreviewItem protocol.
+    - (id <QLPreviewItem>) previewController: (QLPreviewController *) controller previewItemAtIndex: (NSInteger) index {
+        NSURL* pdfURL = [self.pdfArray objectAtIndex:index];
+        NSLog(@"PDFViewer loading [%@]", pdfURL);
+        return pdfURL;
+    }
 
 @end
